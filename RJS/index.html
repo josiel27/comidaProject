@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grade Colors </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        #section1 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: rgba(30, 136, 229, 0.57);
+        }
+
+        #section2 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: rgba(102, 58, 183, 0.67);
+        }
+
+        #section3 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: rgba(255, 149, 0, 0.56);
+        }
+
+        #section4 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: rgba(255, 0, 0, 0.41);
+        }
+
+        #section51 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: rgba(0, 194, 212, 0.49);
+        }
+
+        #section52 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: rgba(2, 5, 5, 0.75);
+        }
+
+        .classImg1 {
+            top: 30px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#idMenu").click(function () {
+                $("#navegacao").hide(200);
+            });
+            $("#idMenuFechado").click(function () {
+                $("#navegacao").show(200);
+            });
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <button id="idMenuFechado" class="navbar navbar-inverse navbar-fixed-top container-fluid navbar-header navbar-brand" style="color: white"> |  |  | </button>
+
+    <nav id="navegacao" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+
+                <a id="idMenu" class="navbar-brand" href="#">Menu</a>
+
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Café da Manhã</a></li>
+                        <li><a href="#section2">Almoço</a></li>
+                        <li><a href="#section3">Janta</a></li>
+                        <li><a href="#section4">Gula da Madrugada</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ajuda<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section51">Onde eu estou?</a></li>
+                                <li><a href="#section52">Me perdi..</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="section1" class="container-fluid img-responsive">
+        <div class="container ">
+            <div class="row">
+                <div class="text-center">
+                    <img class="img-responsive col-md-12 classImg1 sizeBck w3-circle" src="img/cafedamanha.jpg">
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+    <div id="section2" class="container-fluid ">
+        <div class="container ">
+            <div class="row">
+                <div class="text-center">
+                    <img class="img-responsive col-md-12 classImg1  w3-circle" src="img/almoco.jpg">
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+    <div id="section3" class="container-fluid">
+        <div class="container ">
+            <div class="row">
+                <div class="text-center">
+                    <img class="img-responsive col-md-12 classImg1 sizeBck w3-circle" src="img/janta.jpg">
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+    <div id="section4" class="container-fluid">
+        <div class="container ">
+            <div class="row">
+                <div class="text-center">
+                    <img class="img-responsive col-md-12 classImg1 sizeBck w3-circle" src="img/hamburguer.jpg">
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+    <div id="section51" class="container-fluid">
+        <div class="container ">
+            <div class="row">
+                <div class="text-center">
+                    <img class="img-responsive col-md-12 classImg1 sizeBck w3-circle" src="img/cafedamanha.jpg">
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+    <div id="section52" class="container-fluid">
+        <div class="container ">
+            <div class="row">
+                <div class="text-center">
+                    <img class="img-responsive col-md-12 classImg1 sizeBck w3-circle" src="img/cafedamanha.jpg">
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+
+</body>
+
+</html>
