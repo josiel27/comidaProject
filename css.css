@@ -1,0 +1,19 @@
+body {
+    height: 5000px;
+    background: linear-gradient(to bottom, #6BB9F0, #446CB3);
+  }
+  
+  h1 {
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .kraken {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    margin: -125px 0 0 -125px;
+  }
